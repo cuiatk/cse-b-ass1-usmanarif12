@@ -15,12 +15,12 @@ public class TurtleSoup {
      * @param sideLength length of each side
      */
     public static void drawSquare(Turtle turtle, int sideLength) {
-    	 for(int x = 0; x < 4; x++)
-    	 {
-             turtle.forward(sideLength);
-             turtle.turn(90.0);
-         }
-    }
+   	 for(int x = 0; x < 4; x++)
+   	 {
+            turtle.forward(sideLength);
+            turtle.turn(90.0);
+        }
+   }
 
     /**
      * Determine inside angles of a regular polygon.
@@ -139,7 +139,7 @@ public class TurtleSoup {
             }
             drawRegularPolygon(turtle, 5, 50);
             turtle.forward(sideLength);
-            turtle.turn(270.0 - calculateRegularPolygonAngle(sides));
+            turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
         }
     }
 
@@ -153,13 +153,13 @@ public class TurtleSoup {
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
 
-        drawSquare(turtle, 60);
+       drawSquare(turtle, 160);
 
         // draw the window
         turtle.draw();
         
-        drawRegularPolygon(turtle,5, 60);
-        drawPersonalArt(turtle);
+       // drawRegularPolygon(turtle,5, 60);
+      //  drawPersonalArt(turtle);
        
         turtle.draw();
         

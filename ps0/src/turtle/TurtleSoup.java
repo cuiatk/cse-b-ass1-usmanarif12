@@ -158,8 +158,8 @@ public class TurtleSoup {
         // draw the window
         turtle.draw();
         
-       drawRegularPolygon(turtle,5, 160);
-      // drawPersonalArt(turtle);
+      // drawRegularPolygon(turtle,5, 160);
+       drawPersonalArt(turtle);
        
         turtle.draw();
         
